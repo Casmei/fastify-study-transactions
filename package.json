@@ -1,0 +1,33 @@
+{
+  "name": "transactions",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch ./src/server.ts",
+    "lint": "eslint src --ext .ts --fix",
+    "test": "vitest",
+    "knex": "node --import tsx ./node_modules/.bin/knex"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^11.0.2",
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/supertest": "^6.0.3",
+    "dotenv": "^16.5.0",
+    "eslint": "^8.57.1",
+    "fastify": "^5.3.3",
+    "knex": "^3.1.0",
+    "sqlite3": "^5.1.7",
+    "supertest": "^7.1.1",
+    "zod": "^3.25.42"
+  }
+}
